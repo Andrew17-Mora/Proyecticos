@@ -1,12 +1,18 @@
-# React + Vite
+# Proyecto SPA con React (Actividad 4)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una Single Page Application (SPA) desarrollada con React + Vite, cumpliendo con los siguientes requerimientos:
 
-Currently, two official plugins are available:
+- SPA con React (Vite)  
+- Navegación con React Router  
+- Formulario validado que interactúa con una API  
+- Uso de hooks y manejo de estados  
+- Pruebas con Vitest y React Testing Library  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Instalación y ejecución
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/Andrew17-mora/Proyecticos.git
+   cd proyecticos-spa
