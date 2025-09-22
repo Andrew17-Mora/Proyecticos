@@ -1,0 +1,162 @@
+/* ----------- Estilos base ----------- */
+:root {
+  --color-primario: #003366;  /* Azul oscuro */
+  --color-secundario: #1352ff; /* Azul intermedio */
+  --color-acento: #ffcc00;    /* Amarillo */
+  --color-blanco: #ffffff;
+  --color-gris: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-gris);
+  color: var(--color-primario);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----------- Header y navegación ----------- */
+header {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  padding: 1rem;
+}
+
+header .logo h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+a {
+  color: var(--color-blanco);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-acento);
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-blanco); 
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: var(--color-acento);
+  color: var(--color-primario);
+}
+
+/* ----------- Contenedor principal ----------- */
+main.container {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* ----------- Tablas (Estudiantes) ----------- */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: var(--color-blanco);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.table th {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #eef5ff;
+}
+
+/* ----------- Tarjetas de almuerzos ----------- */
+.lunch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.lunch-card {
+  background-color: var(--color-blanco);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lunch-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.lunch-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.lunch-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: var(--color-secundario);
+}
+
+/* ----------- Footer ----------- */
+footer {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* ----------- Responsividad ----------- */
+@media (max-width: 768px) {
+  header .logo h1 {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
